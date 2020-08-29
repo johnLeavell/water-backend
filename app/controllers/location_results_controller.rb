@@ -1,6 +1,6 @@
 class LocationResultsController < ApplicationController
     def index
-        locationResult = LocationsResult.all
-        render json: locationResult, include: [:location, :result]
+        @locationResults = LocationResult.all
+        render json: @locationResults, include: [:location, :result]
     end
 end

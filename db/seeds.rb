@@ -16,21 +16,28 @@
 # results.each { |result| Result.create(result) }
 
 
-# LocationResult.create(location_id: Location.ids.sample, result_id: Result.ids.sample)
-# LocationResult.create(location_id: Location.ids.sample, result_id: Result.ids.sample)
-# LocationResult.create(location_id: Location.ids.sample, result_id: Result.ids.sample)
-require 'csv'
+# LocationResult.create(location_id: 2, result_id: 4)
+# LocationResult.create(location_id: 2, result_id: 5)
+# LocationResult.create(location_id: 2, result_id: 6)
 
-CSV.foreach(Rails.root.join('lib/loomis_seeds.csv'), headers: true) do |row|
-        Result.create({
-            date: row[0],
-            time: row[1],
-            temp: row[2],
-            trub: row[3],
-            stage: row[4],
-            tryp_ppb: row[5],
-            tryp_temp_corr: row[6],
-            coil_coll_100ml: row[7],
-            cable_power: row[8]
-        })
-end
+LocationResult.create(location_id: 3, result_id: 9)
+LocationResult.create(location_id: 3, result_id: 10)
+LocationResult.create(location_id: 3, result_id: 11)
+
+# require 'csv'
+
+# CSV.foreach(Rails.root.join('lib/loomis_seeds.csv'), headers: true) do |row|
+#         Result.create({
+#             date: row[0],
+#             time: row[1],
+#             temp: row[2],
+#             trub: row[3],
+#             stage: row[4],
+#             tryp_ppb: row[5],
+#             tryp_temp_corr: row[6],
+#             coil_coll_100ml: row[7],
+#             cable_power: row[8]
+#         })
+# end
+# LocationResult.delete_all
+
