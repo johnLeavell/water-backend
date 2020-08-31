@@ -12,10 +12,10 @@ class LocationsController < ApplicationController
         @location = Location.new(location_params)
     end
       
-    # def create
-    #   @location = Location.new(location_params)
-    #   @location.save
-    # end
+    def create
+      @location = Location.new(location_params)
+      @location.save
+    end
     
     
     private
