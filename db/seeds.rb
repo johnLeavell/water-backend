@@ -20,9 +20,9 @@
 # LocationResult.create(location_id: 2, result_id: 5)
 # LocationResult.create(location_id: 2, result_id: 6)
 
-LocationResult.create(location_id: 3, result_id: 9)
-LocationResult.create(location_id: 3, result_id: 10)
-LocationResult.create(location_id: 3, result_id: 11)
+# LocationResult.create(location_id: 3, result_id: 9)
+# LocationResult.create(location_id: 3, result_id: 10)
+# LocationResult.create(location_id: 3, result_id: 11)
 
 # require 'csv'
 
